@@ -1,0 +1,28 @@
+import categorias.*
+import bonos.*
+import pepe2.*
+
+describe "Test pepe"{
+	test "test1" {
+		pepe.setCategoria(cadete)
+		pepe.setBonoPresentismo(bonoDependeFaltas)
+		pepe.setBonoResultado(bonoPorcentaje)
+		pepe.setFaltas(0) 
+		assert.equals(16600,pepe.sueldo())
+	}
+		test "test2" {
+		pepe.setCategoria(gerente)
+		pepe.setBonoPresentismo(bonoNulo)
+		pepe.setBonoResultado(bonoPorcentaje) 
+		assert.equals(16600,pepe.sueldo())
+	}
+		test "test3" {
+		pepe.setCategoria(cadete)
+		pepe.setBonoPresentismo(bonoDependeFaltas)
+		pepe.setBonoResultado(bonoPorcentaje)
+		pepe.setFaltas(0) 
+		assert.equals(16600,pepe.sueldo())
+	}
+}
+
+	
